@@ -1,0 +1,69 @@
+1] Redirect the output of ls command to a file named outfile. Use this as an input file
+ans : ls >> outfile.txt
+	 cat outfile.txt
+
+2] To select the lines in a file which has digit as one of the character in that line and 
+   redirect the output to the file named list.
+ans : grep -h "1" filename.txt >> list.txt
+
+3] Assign execute permission to owner and remove read permissionfromother for an ordinary 
+   file named test by relative way.
+ans : chmod 133 filename.txt
+
+4] Create an alias named rm that always deletes file interactively.
+ans : alias rm="rm filename.txt"
+
+5] Count the currently login users to the system.
+ans : w username
+
+-----------------------------------------------------------------------------------------
+
+1] Redirect the output of cat command to a file named outfile. Use thisasan input file.
+ans : cat filename.txt > outfile.txt
+	
+2] List all hidden files under current directory and store in “hidden” file
+ans : ls a
+	 ls al --> to list hidden files.
+
+3] Assign write permission to owner and remove execute permission from other 
+   for an ordinary file named test by absolute way.
+ans : chmod 266 filename.txt
+
+4] To create soft and hard link for given file
+ans : ln filename1 filename2
+	 ln -s filename2
+	 ln -l filename2
+5] To convert lowercase to upper case of a given file
+ans : tr '[:lower:]' '[:upper:]' < filename.txt
+
+6] To extract 1st and 10th character of a given file.
+ans : cat -c 1 filename.txt
+	 cat -c 10 filename.txt
+
+7] To display how many times lines are repeated in a given file
+ans: grep -n "line input karo" filename.txt
+
+
+-------------------------------------------------------------------------------------------
+
+1] To redirect the output of cp command to a file named outfile. 
+   Use this as an input file for remaining commands.
+ans : cp filename1.txt filename2.txt 
+
+2] To select the lines in a file which has 4 letter words in that line and redirect the output 
+   to the file named list.
+ans : grep -i -w -o "[a-z][a-z][a-z][a-z]" filename.txt | sort -u | tr "\n" " " 
+
+3] Assign write permission to owner and remove execute permission from other 
+   for an ordinary file named test by absolute way.
+ans : chmod 266 filename.txt
+
+4] Create an alias named ls that always lists all the files including hidden files.
+ans : alias ls="ls -al"
+
+5] Count the number of words in the list file.
+ans : wc -w filename.txt
+
+---------------------------------------------------------------------------------------------
+
+ 
